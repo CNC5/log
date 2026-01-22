@@ -19,5 +19,5 @@ func main() {
 }
 ```
 ```output
-{"caller":"log.Error","field":"value","iteration":4,"level":"error","msg":"e","path":"./","timestamp":"Thu Jan 22 19:18:43 UTC 2026"}
+{"caller":"main.main","field":"value","iteration":4,"level":"error","msg":"e","path":"./","timestamp":"Thu Jan 22 19:23:07 UTC 2026"}
 ```
