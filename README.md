@@ -2,7 +2,7 @@
 Structured logger with JSON output
 
 ## usage
-```
+```go
 package main
 
 import (
@@ -18,6 +18,6 @@ func main() {
 	// every msg chain MUST end with a Msg or Done
 }
 ```
-```output
+```json
 {"caller":"main.main","field":"value","iteration":4,"level":"error","msg":"e","path":"./","timestamp":"Thu Jan 22 19:23:07 UTC 2026"}
 ```
