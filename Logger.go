@@ -27,17 +27,6 @@ func NewLogger(module string, level int) *Logger {
 	return &newLogger
 }
 
-func GetDefaultLogger() *Logger {
-	if defaultLogger == nil {
-		defaultLogger = NewLogger("main", INFO)
-	}
-	return defaultLogger
-}
-
-func SetDefaultLogger(l *Logger) {
-	defaultLogger = l
-}
-
 func (l *Logger) logAsJSON(data map[string]any) {
 	line, _ := json.Marshal(data)
 	l.stdout.Println(string(line))
