@@ -14,7 +14,7 @@ type Logger struct {
 	callerDiscoverySkip int
 }
 
-var defaultLogger *Logger = &Logger{}
+var defaultLogger *Logger = nil
 
 func NewLogger(module string, level int) *Logger {
 	newLogger := Logger{
@@ -28,8 +28,8 @@ func NewLogger(module string, level int) *Logger {
 }
 
 func GetDefaultLogger() *Logger {
-	if defaultLogger == (&Logger{}) {
-		defaultLogger = NewLogger("", INFO)
+	if defaultLogger == nil {
+		defaultLogger = NewLogger("main", INFO)
 	}
 	return defaultLogger
 }
