@@ -20,7 +20,7 @@ func NewLogger(module string, level int) *Logger {
 	newLogger := Logger{
 		module:              module,
 		stdout:              log.New(os.Stdout, "", 1),
-		callerDiscoverySkip: 3, // skip the log function and the wrapper
+		callerDiscoverySkip: 4, // skip the log function and the wrapper
 	}
 	newLogger.SetLevel(level)
 	newLogger.stdout.SetFlags(0)
