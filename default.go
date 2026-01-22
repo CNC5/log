@@ -30,7 +30,3 @@ func Error() *MsgChain {
 func Fatal() *MsgChain {
 	return GetDefaultLogger().Fatal()
 }
-
-func Panic() *MsgChain {
-	return GetDefaultLogger().Panic()
-}

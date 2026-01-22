@@ -66,9 +66,6 @@ func (l *Logger) Warning() *MsgChain {
 func (l *Logger) Error() *MsgChain {
 	return l.startNewChain(ERROR)
 }
-func (l *Logger) Panic() *MsgChain {
-	return l.startNewChain(PANIC)
-}
 func (l *Logger) Fatal() *MsgChain {
 	return l.startNewChain(FATAL)
 }

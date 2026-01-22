@@ -1,11 +1,10 @@
 package log
 
 const (
-	DEBUG           = 5
-	INFO            = 4
-	WARNING         = 3
-	ERROR           = 2
-	PANIC           = 1
+	DEBUG           = 4
+	INFO            = 3
+	WARNING         = 2
+	ERROR           = 1
 	FATAL           = 0
 	MAXVERBOSELEVEL = DEBUG
 )
@@ -15,14 +14,12 @@ func logLevelToString(level int) string {
 	case 0:
 		return "fatal"
 	case 1:
-		return "panic"
-	case 2:
 		return "error"
-	case 3:
+	case 2:
 		return "warning"
-	case 4:
+	case 3:
 		return "info"
-	case 5:
+	case 4:
 		return "debug"
 	default:
 		return "unknown"
